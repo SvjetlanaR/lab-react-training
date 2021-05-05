@@ -8,6 +8,9 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+// import Dice from './components/Dice';
+import NumbersTable from './components/NumbersTable';
 
 
 
@@ -22,7 +25,6 @@ export default function App() {
         birth={new Date('1992-07-14')}
         picture="https://randomuser.me/api/portraits/men/44.jpg"
       />
-
       <IdCard
         lastName="Delores "
         firstName="Obrien"
@@ -33,10 +35,8 @@ export default function App() {
       />
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
-
       <Random min={1} max={6} />
       <Random min={1} max={100} />
-
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
 
@@ -70,6 +70,7 @@ export default function App() {
         bgColor="#ddbb55"
         color="white"
       />
+      s
       <Rating>0</Rating>
       <Rating>1.49</Rating>
       <Rating>1.5</Rating>
@@ -78,6 +79,17 @@ export default function App() {
       <Rating>5</Rating>
 
       <LikeButton /> <LikeButton />
+
+      <ClickablePicture
+        img="/img/persons/maxence.png"
+        imgClicked="/img/persons/maxence-glasses.png"
+      />
+      
+      {/* <Dice /> */}
+
+      <NumbersTable limit={12} />
+
+
     </div>
   );
 }

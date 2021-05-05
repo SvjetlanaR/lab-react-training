@@ -1,4 +1,5 @@
 import React from 'react'
+import './Random.css'
 
 export default function (props) {
     const stars = (num) => {
@@ -12,7 +13,7 @@ export default function (props) {
     const rate = stars(props.children)
 
     return (
-        <div>
+        <div className='border'>
             <h2>{rate}</h2>
         </div>
     )
